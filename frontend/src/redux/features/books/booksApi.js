@@ -18,6 +18,7 @@ const booksApi = createApi({
     baseQuery,
     tagTypes: ['Books'],
     endpoints: (builder) =>({
+        // phần code xử lí gọi api tùy chức năng "/" nhận số lượng sách "/edit" chỉnh sửa "/deletedelete"
         fetchAllBooks: builder.query({
             query: () => "/",
             providesTags: ["Books"]
